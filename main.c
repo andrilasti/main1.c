@@ -3,7 +3,7 @@
 
 int main(int argc, char **argv)
 {
-    char first[255], last[255], age[2];
+    char first[255], last[255];
 
     printf("Enter your first name: ");
     fgets(first, 255, stdin);
@@ -12,10 +12,7 @@ int main(int argc, char **argv)
     printf("Now enter your last name: ");
     gets(last); /* buffer overflow? what's that? */
 
-    printf("Now enter your age: ");
-    gets(age); /* didn't conduct age */
-
-    printf("Hello %s %s!\n", first, last, age);
+    printf("Hello %s %s!\n", first, last);
     return 0;
 }
 
